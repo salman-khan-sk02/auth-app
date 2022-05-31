@@ -1,0 +1,54 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0", 
+      "title": "Basic Auth APP",
+      "description": "Basic Auth APP",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "host": "localhost:4000",
+    "basePath": "/",
+    "tags": [
+      {
+        "name": "Social Logins",
+        "description": ""
+      }
+    ],
+    "schemes": ["http"],
+    "produces": ["application/json", "application/xml"],
+    "paths": {
+        "/auth/google/url": {
+          "get": {
+            "tags": ["Google"],
+            "summary": "Google Social Login",
+            "responses": {
+              "200": {
+                "description": "OK",
+                "schema": {
+                  "$ref": ""
+                }
+              }
+            }
+            
+          }
+        },
+        "/auth/facebook/url": {
+            "get": {
+              "tags": ["Facebook"],
+              "summary": "Facebook Social Login",
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "schema": {
+                    "$ref": ""
+                  }
+                }
+              }
+              
+            }
+          }
+      }
+  }
